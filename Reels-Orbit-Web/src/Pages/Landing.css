@@ -1,0 +1,25 @@
+.blur-background {
+    filter: blur(4px);
+    position: relative;
+    z-index: 1000;
+  }
+.page{
+  margin-top: 100px;
+}
+.loading-containerMain{
+  display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw; 
+}
+
+@media (max-width: 600px) {
+  .loading-containerMain{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; 
+  }
+}

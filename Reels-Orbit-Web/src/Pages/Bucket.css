@@ -1,0 +1,342 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(2px); 
+    z-index: 999; 
+}
+.Bucketpage{
+    font-family: "Inter", sans-serif;
+    min-height: 90vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 46%, rgba(73, 53, 86, 0.7) 46%);
+}
+
+.bktTop{
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    h1{
+       font-size: 26px; 
+       margin-left: 40px;   
+    }
+}
+
+.bucketBtn{
+    cursor: pointer;
+    border: 2px solid rgb(216, 113, 216);
+    padding: 8px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+.personIcon{
+    width: 20px;
+    margin-left: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.picked {
+    padding: 20px;
+    display: grid; 
+    gap: 30px;
+    width: 900px; 
+    width: 90%;
+    max-width: 60%;
+    margin-top: 70px;
+    margin-left: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.BuktTopLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cont{
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+  
+    min-height: 60vh;
+
+    .contLeft{
+        min-width: 400px;
+    }
+}
+
+.contLeft{
+    border-right: 2px solid rgba(135, 134, 135, 0.7);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   line-height: 20px;
+    .welcome{
+        font-size: 30px;
+        padding-top: 26px;
+        font-weight: 600;
+    }
+    .bktUserName{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(216, 113, 216);
+    }
+    .bktUserEmail{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+.bktTopRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBkt{
+    margin-left: 40px;
+    margin-bottom: 14px;
+}
+
+.emptyBkt{
+    font-size: 40px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    max-width: 800px;
+    padding-bottom: 100px;
+}
+
+.sidebar-content {
+    background-color: #2c2f33;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 280px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+
+.sidebar-content .email {
+    font-size: 14px;
+    color: #b0bec5;
+    margin-bottom: 10px;
+}
+
+.sidebar-content h3, .sidebar-content h4 {
+    font-size: 18px;
+    color: rgb(216, 113, 216);
+    margin-top: 15px;
+}
+
+.sidebar-content ul.genres {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-content ul.genres li {
+    background-color: #444950;
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sidebar-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .Bucketpage {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 46%, rgba(73, 53, 86, 0.8) 46%);
+    }
+
+    .logoBkt{
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      .reels{
+        font-size: 14px;
+        margin-bottom: -16px;
+      }
+      .orbit{
+        font-size: 14px;
+      }
+      
+  }
+
+    .bktTop {
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center !important;
+      width: 100%;
+      z-index: 100020;
+      background-color: black;
+    }
+
+    
+  .bktTopRight{
+    margin: 0px;
+    width: 260px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+  
+    .bktTop h1 {
+      font-size: 20px;
+      margin: 0px;
+    }
+  
+    .bucketBtn {
+      padding: 10px;
+      width: 14%;
+      border-radius: 8px;
+      width:62px;
+      margin-top: 34px;
+      margin-left: 20px;
+    }
+  
+    .personIcon {
+      margin-left: 5px;
+      width: 16px;
+    }
+
+    .BuktTopLeft{
+        margin-top: -24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: -30px;
+        p{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 0px;
+            opacity: 0;
+        }
+    }
+  
+    .cont {
+      flex-direction: column;
+      padding-bottom: 30px;
+      min-height: auto;
+      justify-content: center;
+      align-items: center;
+      margin-top: -40px;
+    }
+  
+    .contLeft {
+      width: 10%;
+      border-right: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  
+    .picked {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .welcome {
+      font-size: 24px;
+    }
+  
+    .bktUserName,
+    .bktUserEmail {
+      font-size: 14px;
+    }
+  
+    .bktTopRight {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sidebar-content {
+      width: 60%;
+      max-width: 100%;
+      padding: 10px;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .sidebar-content h3,
+    .sidebar-content h4 {
+      font-size: 14px;
+    }
+  
+    .sidebar-content p {
+      font-size: 10px;
+    }
+  
+    .sidebar-content ul.genres {
+      justify-content: center;
+
+      li{
+        font-size: 10px;
+      }
+    }
+  
+    .emptyBkt {
+      font-size: 20px;
+      left: -280px;
+      top: 50px;
+    }
+  
+    .logoBkt {
+      margin-left: 0;
+    }
+  
+    .motiondev {
+      width: 90%;
+      left: 5%;
+    }
+  
+    .backdrop {
+      backdrop-filter: blur(1px);
+    }
+  }
+  
+
+  
