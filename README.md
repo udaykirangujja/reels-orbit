@@ -1,4 +1,4 @@
-# Reels Orbit an E-Commerce Website Prototype
+# Reels Orbit
 #### Spring Cloud GCP | Spring Boot Microservices | React | Docker
 
 https://github.com/user-attachments/assets/352ec47f-bf2c-415d-9926-d9ded84188c2
